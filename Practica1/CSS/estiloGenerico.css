@@ -1,0 +1,68 @@
+/*Especifidad 001*/
+body {
+      font: 400 16px Tahoma; /*Familia sans-serif*/
+      line-height: 1.8;
+      background-color: #051c3b;
+      color:#bdc7d4;
+}
+
+/*Especifidad 001*/
+a {
+  color: #f40808;
+}
+
+/*Especifidad 001*/
+nav {
+  display: flex;
+  background-color: #020f20;
+  margin: 10px;
+  padding: 10px;
+  font-size: 24px;
+  justify-content: space-evenly;
+}
+
+/*Especifidad 002*/
+nav a {
+  color: #8cf076;
+  text-shadow: 1px 1px #f40808;
+  text-decoration: none;
+}
+
+/*Especifidad 001*/
+header {
+  border-color: #000000;
+  border-radius: 2px;
+  background-image: url("../multimedia/ghostbusters.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding: 70px;
+}
+
+/*Especifidad 001*/
+p {
+  margin: 10px;
+  text-align: justify;
+}
+
+/*Especifidad 001*/
+h1 {
+      font: bold 70px Helvetica;
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow: 2px 0px #000000, -2px 0px #000000, 0px -2px #000000, 0px 2px #000000, -2px -2px #000000, 2px 2px #000000, -2px 2px #000000, 2px -2px #000000, -4px 0px #f40808, 4px 0px #89dd77;
+      color: #ffffff;
+  }
+
+/*Especifidad 001*/
+h2 {
+    margin: 10px;
+
+    font: bold 29px Helvetica;
+    text-transform: uppercase;
+
+    text-shadow: 1px 0px #f40808, -1px 0px #f40808, 0px -1px #f40808, 0px 1px #f40808;
+    color: #ffffff;
+  }
+
