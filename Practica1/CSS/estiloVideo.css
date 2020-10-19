@@ -1,6 +1,4 @@
 video {
-    height: 600px;
-    width: 800px;
-    position: absolute;
+    position: relative;
     margin: auto;
 }
