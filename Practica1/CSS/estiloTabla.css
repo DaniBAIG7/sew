@@ -6,8 +6,9 @@ table {
   
   /*Especifidad 001*/
   th{
-    border: 2px solid #f40808;
-    padding: 15px;
+    border: 0.02em solid #f40808;
+    padding: 2em;
+    margin: auto;
     text-align: center;
     color: #ffffff;
     text-decoration: underline;
@@ -15,20 +16,20 @@ table {
   
   /*Especifidad 001*/
   td {
-    padding: 17px;
-    border: 2px solid #f40808;
+    padding: 1em;
+    border: 0.02em solid #f40808;
     text-align: center;
   }
   
   /*Especifidad 001*/
   caption {
-    font: bold 25px Helvetica;
-    padding: 20px;
+    font: bold 1.5em Helvetica;
+    padding: 1em;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 1px 0px #f40808, -1px 0px #f40808, 0px -1px #f40808, 0px 1px #f40808;
+    text-shadow: 0.01em 0em #f40808, -0.01em 0em #f40808, 0em -0.01em #f40808, 0em 0.01em #f40808;
     color: #ffffff;
-    border: 2px solid #f40808;
+    border: 0.02em solid #f40808;
     
   }
 

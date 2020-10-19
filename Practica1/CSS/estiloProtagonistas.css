@@ -1,7 +1,7 @@
 /*Especificidad 002*/
 li img {
-    width: 150px;
-    height: 200px;
+    width: 40%;
+    height: 60%;
 }
 
 /*Especificidad 001*/
@@ -14,7 +14,7 @@ ul {
 li {
     column-count: 1;
     text-align: center;
-    padding: 20px;
-    margin: 5px;
+    padding: 0.2em;
+    margin: 0.2em;
     background-color:  #020f20;
 }

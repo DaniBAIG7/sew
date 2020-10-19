@@ -5,3 +5,8 @@ ul{
     display: flex;
     justify-content: space-evenly;
 }
+
+ul img {
+    width: 90%;
+    height: 90%;
+}
