@@ -1,3 +1,6 @@
-div{
-    text-align: center;
+video {
+    height: 600;
+    width: 800;
+    position: absolute;
+    margin: auto;
 }
