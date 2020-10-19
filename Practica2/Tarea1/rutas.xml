@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rutas>
+
+<rutas>
+<ruta nombre="De Oviedo a Vegadeo" tipo="Arquitectura y monumentos" dificultad="Fácil" duracion="5 horas" recomendacion="7" aptitud="Conductores experimentados">
+    <agencia>Sin agencia</agencia>
+    <descripcion>
+        Desde autopistas de excelente firme y trazado podemos acceder en muy pocos kilómetros a despobladas y
+        estrechas carreteras comarcales en esta divertida ruta en moto que nos adentra en frondosos paisajes de infinitas tonalidades de verde
+        y puertos plagados de curvas, de muchas curvas. Como un catálogo con todos los tipos de trazadas que podremos encontrar a lo largo de nuestra vida.
+    </descripcion>
+    <lugarinicio>
+        <ciudad>Oviedo</ciudad>
+        <direccion>Plaza de la Escandalera</direccion>
+        <coordenadas>43.36223048016113, -5.8480476998988635</coordenadas>
+    </lugarinicio>
+    <referencias>
+        <referencia enlace="https://magazine.caser.es/sobre-ruedas/moteros/tres-rutas-en-moto-por-asturias/#Ruta_1_De_Oviedo_a_Vegadeo,_curvas_y_naturaleza_sin_igual">Fuente: Información detallada</referencia>
+        <referencia enlace="https://es.wikipedia.org/wiki/Vegadeo">Vegadeo</referencia>
+        <referencia enlace="https://es.wikipedia.org/wiki/Oviedo">Oviedo</referencia>
+    </referencias>
+    <hitos>
+        <hito nombre="Alto Cabruñana" distanciaDesdeAnterior="32,5km">
+            <descripcion>
+                Final del primer tramo (Oviedo-Alto Cabruñana) desde el inicio de la ruta.
+                Desde aquí empezamos la bajada del primer puerto, comenzando el segundo tramo que finalizará en Cangas del Narcea.
+            </descripcion>
+            <coordenadas>43.397857055654335, -6.1219638716839295</coordenadas>
+            <fotografías>
+                <fotografía enlace="https://cycloclimbing.com/tour2005/bilder/140cabrunana.jpg">Imagen del cartel del alto</fotografía>
+                <fotografía enlace="https://www.bici-tienda.com/blog/wp-content/uploads/2015/08/Perfil-del-puerto-Alto-de-la-Cabrunana-1024x768.jpg">Entorno</fotografía>
+            </fotografías>
+        </hito>
+
+        <hito nombre="Cangas del Narcea" distanciaDesdeAnterior="63,5km">
+            <descripcion>
+                Final del segundo tramo de la ruta (Alto Cabruñana-Cangas del Narcea).
+                Los aledaños del Parque Natural de las Fuentes del Narcea y la Reserva Natural de Muniellos
+                nos permiten contemplar una naturaleza generosa, especialmente en otoño cuando los hayedos y los robledales se tiñen de todos los ocres imaginables.
+            </descripcion>
+            <coordenadas>43.185980737782806, -6.549319774135952</coordenadas>
+            <fotografías>
+                <fotografía enlace="https://www.turismoasturias.es/documents/11022/38360/BosqueMuniellos1.jpg?t=1389219900152">Reserva de Muniellos</fotografía>
+                <fotografía enlace="https://www.codigopostal.org/images/imagen-de-cangas-del-narcea-2.jpg">Ciudad de Cangas del Narcea</fotografía>
+                <fotografía enlace="https://www.turismoasturias.es/documents/11022/40187/05163_Reserva_Natural_Parcial_del_Cueto_de_Arbas.jpg/b49132d0-1826-4c7f-9d03-7be759909a7b?t=1475228236653">Parque Natural de las Fuentes del Narcea</fotografía>
+            </fotografías>
+        </hito>
+
+        <hito nombre="San Antolín de Ibias" distanciaDesdeAnterior="48,3km">
+            <descripcion>
+                Final del tercer tramo de la ruta (Cangas del Narcea-San Antolín de Ibias).
+                Desde este punto, pueblo pequeño y escondido como un tesoro natural que cuenta con antiguos monumentos, casas típicas de esta región y con su iglesia tambien antigua del siglo XIII, podremos pararnos a descansar puesto que luego nos adentraremos brevemente en tierras gallegas para volver a Asturias en un entorno declarado Reserva de la Biosfera.
+            </descripcion>
+            <coordenadas></coordenadas>
+        </hito>
+
+        <hito>
+        </hito>
+
+        <hito>
+        </hito>
+    </hitos>
+</ruta>
+</rutas>
