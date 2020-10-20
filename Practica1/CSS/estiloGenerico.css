@@ -67,3 +67,12 @@ h2 {
     color: #ffffff;
   }
 
+footer {
+  margin-top: 2.5em;
+  display: flex;
+}
+
+footer img {
+  height: 3em;
+  width: 3em;
+}
