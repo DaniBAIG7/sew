@@ -1,10 +1,10 @@
-/*Especifidad 001*/
+/*Especificidad 001*/
 table {
     border-collapse: collapse;
     width: 100%;
   }
   
-  /*Especifidad 001*/
+  /*Especificidad 001*/
   th{
     border: 0.02em solid #f40808;
     padding: 2em;
@@ -14,14 +14,14 @@ table {
     text-decoration: underline;
   }
   
-  /*Especifidad 001*/
+  /*Especificidad 001*/
   td {
     padding: 1em;
     border: 0.02em solid #f40808;
     text-align: center;
   }
   
-  /*Especifidad 001*/
+  /*Especificidad 001*/
   caption {
     font: bold 1.5em Helvetica;
     padding: 1em;

@@ -1,11 +1,12 @@
 
-/*Especifidad 002*/
+/*Especificidad 001*/
 ul{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
 }
 
+/*Especificidad 002*/
 ul img {
     width: 90%;
     height: 90%;

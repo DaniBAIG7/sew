@@ -2,7 +2,7 @@
 <!DOCTYPE rutas>
 
 <rutas>
-<ruta nombre="De Oviedo a Vegadeo" tipo="Arquitectura y monumentos" dificultad="Fácil" duracion="5 horas" recomendacion="7" aptitud="Conductores experimentados">
+<ruta nombre="De Oviedo a Vegadeo" tipo="Arquitectura y monumentos" dificultad="Fácil" duracion="2 dias" recomendacion="7" aptitud="Conductores experimentados">
     <agencia>Sin agencia</agencia>
     <descripcion>
         Desde autopistas de excelente firme y trazado podemos acceder en muy pocos kilómetros a despobladas y
@@ -49,16 +49,67 @@
         <hito nombre="San Antolín de Ibias" distanciaDesdeAnterior="48,3km">
             <descripcion>
                 Final del tercer tramo de la ruta (Cangas del Narcea-San Antolín de Ibias).
-                Desde este punto, pueblo pequeño y escondido como un tesoro natural que cuenta con antiguos monumentos, casas típicas de esta región y con su iglesia tambien antigua del siglo XIII, podremos pararnos a descansar puesto que luego nos adentraremos brevemente en tierras gallegas para volver a Asturias en un entorno declarado Reserva de la Biosfera.
+                Desde este punto, un pueblo pequeño y escondido como un tesoro natural que cuenta con antiguos monumentos, casas típicas de esta región y con su iglesia tambien antigua del siglo XIII, podremos pararnos a descansar puesto que luego nos adentraremos brevemente en tierras gallegas para volver a Asturias en un entorno declarado Reserva de la Biosfera.
             </descripcion>
-            <coordenadas></coordenadas>
+            <coordenadas>43.05896953133918, -6.871741702848741</coordenadas>
+            <fotografías>
+                <fotografía enlace="https://www.google.es/maps/place/33810+San+Antolin+de+Ibias,+Asturias/@43.03871,-6.8719969,3a,75y/data=!3m8!1e2!3m6!1sAF1QipOIdW-Ew8gR6jQqZHxJv4by9KbjM5jF0vIxN1-G!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOIdW-Ew8gR6jQqZHxJv4by9KbjM5jF0vIxN1-G%3Dw203-h270-k-no!7i3456!8i4608!4m22!1m16!4m15!1m6!1m2!1s0xd311c7b7d5046a3:0xd1a08eb50d093a2f!2sSan+Antolin+de+Ibias!2m2!1d-6.8719969!2d43.03871!1m6!1m2!1s0xd319d937d76c495:0x622507e5305df11a!2s33775+Taramundi,+Asturias!2m2!1d-7.1083458!2d43.3603936!3e0!3m4!1s0xd311c7b7d5046a3:0xd1a08eb50d093a2f!8m2!3d43.03871!4d-6.8719969">Pueblo de San Antolin</fotografía>
+                <fotografía enlace="http://2.bp.blogspot.com/-5QUV5DS-nbc/VLF_YaEEVYI/AAAAAAAAAjE/VCH9rZAWlBQ/s1600/pic_04g-A.jpg">Catedral de San Antolín de Ibias</fotografía>
+            </fotografías>
         </hito>
 
-        <hito>
+        <hito nombre="Taramundi" distanciaDesdeAnterior="73km">
+            <descripcion>
+                Final del cuarto tramo de la ruta (San Antolín de Ibias-Taramundi).
+                Taramundi, otro pintoresco centro turístico, célebre por su arquitectura de pizarra, su orografía y su artesanía de cuchillos, bien merece una dilatada pausa en el camino antes de afrontar la recta final de la etapa hasta Vegadeo. Un lugar en el que podríamos tomar un día de descanso para comprobar toda su riqueza natural. Fronteriza con Galicia, la localidad presume de sus paseos fluviales, aptos para el senderismo. No solo de (y sobre) moto vive el viajero.
+            </descripcion>
+            <coordenadas>43.38320808288379, -7.1079477537427005</coordenadas>
+            <fotografías>
+                <fotografía enlace="https://elviajerofeliz.com/wp-content/uploads/2016/03/Taramundi-un-tesoro-en-el-corazon-de-Asturias.jpg">Molino en Taramundi</fotografía>
+                <fotografía enlace="https://i.ytimg.com/vi/-5et28_mXm4/maxresdefault.jpg">Pueblo de Taramundi</fotografía>
+            </fotografías>
         </hito>
 
-        <hito>
+        <hito nombre="Vegadeo" distanciaDesdeAnterior="17,9km">
+            <descripcion>
+                Final del quinto tramo de la ruta (Taramundi-Vegadeo). Fin de la ruta.
+                Al final llegamos a Vegadeo, un pueblo fronterizo con Galicia que merece la pena tomarse su tiempo para ver.
+            </descripcion>
+            <coordenadas>43.4247894, -7.0277282</coordenadas>
+            <fotografías>
+                <fotografía enlace="http://4.bp.blogspot.com/-dZM5XyrnOus/UoU2zUZnnoI/AAAAAAAAAag/gNC5uqCsx70/s1600/foto+principal+vegadeo.jpg">Foto de Vegadeo</fotografía>
+            </fotografías>
         </hito>
+    </hitos>
+</ruta>
+
+<ruta nombre="De Oviedo a Vegadeo" tipo="Arquitectura y monumentos" dificultad="Fácil" duracion="2 dias" recomendacion="7" aptitud="Conductores comunes">
+</ruta>
+
+<ruta nombre="Mazinger Z" tipo="Gastronomía y buenas carreteras" dificultad="Normal" duracion="16 horas" recomendacion="6" aptitud="Conductores experimentados">
+    <agencia>Motorutas.com</agencia>
+    <descripcion>
+        Buena comida, y numerosas curvas por la Sierra de Cameros con unos paisajes de película, curvas hasta hartar y una ascensión que ronda los 1600 metros de altitud.
+    </descripcion>
+    <lugarinicio>
+        <ciudad>Logroño</ciudad>
+        <direccion>intersección entre la LO-20 y la N-111</direccion>
+        <coordenadas>42.488987, -2.419682</coordenadas>
+    </lugarinicio>
+    <referencias>
+        <referencia enlace="https://motorutas.com/detalleRuta.php?idruta=103910101&seccion=datos">Fuente: Información detallada</referencia>
+    </referencias>
+    <hitos>
+        <hito nombre="Montenegro de Cameros" distanciaDesdeAnterior="58km">
+            <descripcion>
+                Final del primer tramo de la ruta (Logroño-Montenegro de Cameros).
+                Montenegro de Cameros, el único pueblo de la sierra de Cameros perteneciente a la provincia de Soria Nos encontramos a unos 1150 m sobre el nivel del mar y en tan solo 6 km de distancia, ascenderemos hasta los 1600 m, la cima de la ruta, por una carretera llena de curvas y un paisaje divino. En la cima, donde volvemos a entrar nuevamente en la provincia de la Rioja, se puede encontrar nieve incluso en verano.
+            </descripcion>
+            <coordenadas>42.102650661498295, -2.753348915379024</coordenadas>
+            <fotografías>
+                <fotografía></fotografía>
+            </fotografías>
+        </hito> 
     </hitos>
 </ruta>
 </rutas>
