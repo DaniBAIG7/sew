@@ -12,6 +12,11 @@ h2 {
     text-align: center;
 }
 
+label {
+    color: #ffffff;
+    display: none;
+}
+
 input {
     background-color: #99a078;
     height: 2.5em;
@@ -58,8 +63,8 @@ div input {
 }
 
 .opmanagement{
-    background-color: #ec524c;
-    color: #f5f5f5;
+    background-color: #cc4641;
+    color: #ffffff;
 }
 
 .digit {
