@@ -2,95 +2,48 @@
 class Calculadora{
     constructor(){
         this.memo = null;
+        this.pantalla = "";
     }
 
     suma(){
-        var text = document.getElementById('resultado');
-        text.value += "+";
+        this.pantalla += "+";
+        this.refresh();
     }
 
     resta() {
-        var text = document.getElementById('resultado');
-        text.value += '-';
+        this.pantalla += '-';
+        this.refresh();
     }
 
     multiplicacion() {
-        var text = document.getElementById('resultado');
-        text.value += '*';
+        this.pantalla += '*';
+        this.refresh();
     }
 
     division() {
-        var text = document.getElementById('resultado');
-        text.value += '/';
+        this.pantalla += '/';
+        this.refresh();
     }
 
-    coma() {
-        var text = document.getElementById('resultado');
-        text.value += '.';
+    borrar() {
+        this.pantalla = '';
+        this.refresh();
     }
 
-    clear() {
-        document.getElementById('resultado').value = '';
+    digito(digito) {
+        this.pantalla += digito;
+        this.refresh();
     }
 
-    pulsa1() {
-        var text = document.getElementById('resultado');
-        text.value += '1';
-    }
-
-    pulsa2() {
-        var text = document.getElementById('resultado');
-        text.value += '2';
-    }
-    
-    pulsa3() {
-        var text = document.getElementById('resultado');
-        text.value += '3';
-    }
-    
-    pulsa4() {
-        var text = document.getElementById('resultado');
-        text.value += '4';
-    }
-
-    pulsa5() {
-        var text = document.getElementById('resultado');
-        text.value += '5';
-    }
-
-    pulsa6() {
-        var text = document.getElementById('resultado');
-        text.value += '6';
-    }
-
-    pulsa7() {
-        var text = document.getElementById('resultado');
-        text.value += '7';
-    }
-
-    pulsa8() {
-        var text = document.getElementById('resultado');
-        text.value += '8';
-    }
-
-    pulsa9() {
-        var text = document.getElementById('resultado');
-        text.value += '9';
-    }
-
-    pulsa0() {
-        var text = document.getElementById('resultado');
-        text.value += '0';
-    }
-
-    resolver() {
+    igual() {
         try {
-            var str = document.getElementById('resultado').value;
-            document.getElementById("resultado").value = eval(str);
+            var str = this.pantalla;
+            this.pantalla = eval(str);
         }
         catch(err) {
-             document.getElementById("resultado").value = "Error = " + err;
+             this.pantalla = "Error = " + err;
         }
+        this.refresh();
     }
 
     mrc() {
@@ -99,18 +52,24 @@ class Calculadora{
 
     mMenos() {
         if(this.memo != null) {
-            document.getElementById('resultado').value += this.memo;
+            this.pantalla += this.memo;
             this.memo = null;
+            this.refresh();
         }
     }
 
     mMas() {
         try {
-           this.memo = eval(document.getElementById('resultado').value);
+           this.memo = eval(this.pantalla);
         }
         catch(err) {
-           document.getElementById("resultado").value = "Error = " + err;
+           this.pantalla = "Error = " + err;
+           this.refresh();
         }
+    }
+
+    refresh() {
+        document.getElementById("resultado").value = this.pantalla;
     }
 }
 
@@ -120,15 +79,18 @@ class CalculadoraCientifica extends Calculadora {
     }
 
     pi() {
-        document.getElementById("resultado").value += Math.PI;
+        this.pantalla += Math.PI;
+        this.refresh();
     }
 
     parentesisIzq() {
-        document.getElementById("resultado").value += '(';
+        this.pantalla += '(';
+        this.refresh();
     }
 
     parentesisDer() {
-        document.getElementById("resultado").value += ')';
+        this.pantalla += ')';
+        this.refresh();
     }
 
     shift() {
@@ -141,73 +103,78 @@ class CalculadoraCientifica extends Calculadora {
     }
 
     erase() {
-        var valor = document.getElementById("resultado").value;
-        document.getElementById("resultado").value = valor.substring(0, valor.length - 1);
+        var valor = this.pantalla;
+        this.pantalla = valor.substring(0, valor.length - 1);
     }
 
     potenciaX() {
         var lastDigit = this.getLastDigit();
         this.removeLastDigit();
-        document.getElementById("resultado").value += "Math.pow(" + lastDigit + ",";
+        this.pantalla = "Math.pow(" + lastDigit + ",";
+        this.refresh();
     }
 
     tan() {
-        this.removeLastDigit();
         if(this.shiftEnabled) {
-            document.getElementById("resultado").value += "Math.atan(";
+            this.pantalla += "Math.atan(";
             this.shiftEnabled = false;
         } else {
-            document.getElementById("resultado").value += "Math.tan(";
+            this.pantalla += "Math.tan(";
         }
+
+        this.refresh();
     }
 
     cos() {
-        this.removeLastDigit();
         if(this.shiftEnabled) {
-            document.getElementById("resultado").value += "Math.acos(";
+            this.pantalla += "Math.acos(";
             this.shiftEnabled = false;
         } else {
-            document.getElementById("resultado").value += "Math.cos(";
+            this.pantalla += "Math.cos(";
         }
+
+        this.refresh();
     }
 
     sin() {
-        this.removeLastDigit();
         if(this.shiftEnabled) {
-            document.getElementById("resultado").value += "Math.asin(";
+            this.pantalla += "Math.asin(";
             this.shiftEnabled = false;
         } else {
-            document.getElementById("resultado").value += "Math.sin(";
+            this.pantalla += "Math.sin(";
         }
+
+        this.refresh();
     }
 
     raiz() {
         this.removeLastDigit();
-        document.getElementById("resultado").value += "Math.sqrt(";
+        this.pantalla += "Math.sqrt(";
+        this.refresh();
     }
 
     diezElevadoA() {
-        document.getElementById("resultado").value += "Math.pow(10,";
+        this.pantalla += "Math.pow(10,";
     }
 
     base_e_log() {
-        document.getElementById("resultado").value += "Math.log(";
+        this.pantalla += "Math.log(";
     }
 
     exp() {
-        document.getElementById("resultado").value += "Math.exp(";
+        this.pantalla += "Math.exp(";
     }
 
     factorial() {
         
     }
 
-    clearUltimo() {
+    borrarUltimo() {
         this.removeLastDigit();
     }
 
     getLastDigit() {
-        var valor = document.getElementById('resultado').value;
+        var valor = this.pantalla;
         if(this.isUniqueDigit(valor)) {
             return valor;
         } else {
@@ -230,19 +197,21 @@ class CalculadoraCientifica extends Calculadora {
     }
 
     removeLastDigit() {
-        var valor = document.getElementById('resultado').value;
+        var valor = this.pantalla;
         if(this.isUniqueDigit(valor)) {
-            document.getElementById('resultado').value = "";
+            this.pantalla = "";
         }
         else {
             for(var i = valor.length - 1; i >= 0; i--) {
                 if(valor.charAt(i) == '+' || valor.charAt(i) == '-' || valor.charAt(i) == '*' || valor.charAt(i) == '/' || i == 0) {
                     var str = valor.substring(0, i+1);
-                    document.getElementById('resultado').value = str;
+                    this.pantalla = str;
                     break;
                 }
             }
         }
+
+        this.refresh();
     }
 }
 

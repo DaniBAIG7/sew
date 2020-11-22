@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculadora de Coordenadas</title>
-    <link rel="stylesheet" href="./CalculadoraRPN.css" />
-    <script></script>
+    <link rel="stylesheet" href="" />
+    <script src="Ejercicio-6.js"></script>
 </head>
 
 <body lang="es">
@@ -16,22 +16,17 @@
         <div>
             <input type="text" id="coordenadasLatitud" enabled />
             <input type="text" id="coordenadasLongitud" enabled />
-            <input type="button" value="Transformar desde Latitud/Longitud" id="transformarcoordenadasLatLon"/>
+            <button id="transformarcoordenadasLatLon" onclick="transformarCoordenadas.transformar_a_UTM()">Transformar a UTM</button>
         </div>
 
         <div>
             <input type="text" id="coordenadasUTMX" enabled />
             <input type="text" id="coordenadasUTMY" enabled />
-            <input type="button" value="Transformar desde UTM" id="transformarcoordenadas" />
+            <input type="text" id="zone" enabled />
+            <input type="checkbox" id="hemisferiosur" value="Hemisferio Sur"/>
+            <button id="transformarcoordenadasUTM" onclick="transformarCoordenadas.transformar_a_LatLon()">Transformar a Latitud/Longitud</button>
         </div>
 
-        <div>
-            <input type="text" id="coordenadasHoras" enabled />
-            <input type="text" id="coordenadasMinutos" enabled />
-            <input type="text" id="coordenadasSegundos" enabled />
-            <input type="button" value="Transformar desde Horas/Minutos/Segundos" id="transformarcoordenadas"/>
-        </div>
-        
     </article>
     <h2 lang="es">Calcular distancia entre dos coordenadas</h2>
     <article>
@@ -43,8 +38,8 @@
             <input type="text" id="coordenada2Latitud" enabled />
             <input type="text" id="coordenada2Longitud" enabled />
         </div>
-        <input id="calculardistancia" value="Calcular la distancia" type="button"/>
-        <input id="resultado" type="text" disabled/>
+        <input id="calculardistancia" value="Calcular la distancia" type="button" onclick="calculadoraDistancia.calcularDistancia()"/>
+        <input id="resultado" type="text" disabled />
     </article>
     <footer>
         <a href="http://validator.w3.org/check/referer" hreflang="en-us">
