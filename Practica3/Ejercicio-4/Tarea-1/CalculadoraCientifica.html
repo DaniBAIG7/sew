@@ -50,8 +50,8 @@
         </div>
         <div>
             <input type="button" value="↑" class="opmanagement" onClick="calculadora.shift()" />
-            <input type="button" value="C" class="opmanagement" onClick="calculadora.clear()" />
-            <input type="button" value="CE" class="opmanagement" onClick="calculadora.clearUltimo()" />
+            <input type="button" value="C" class="opmanagement" onClick="calculadora.borrar()" />
+            <input type="button" value="CE" class="opmanagement" onClick="calculadora.borrarUltimo()" />
             <input type="button" value="←" class="opmanagement" onClick="calculadora.erase()" />
         </div>
         <div>
@@ -61,28 +61,28 @@
             <input type="button" value="/" class="operator" onClick="calculadora.division()" />
         </div>
         <div>
-            <input type="button" value="7" class="digit" onClick="calculadora.pulsa7()" />
-            <input type="button" value="8" class="digit" onClick="calculadora.pulsa8()" />
-            <input type="button" value="9" class="digit" onClick="calculadora.pulsa9()" />
+            <input type="button" value="7" class="digit" onClick="calculadora.digito(7)" />
+            <input type="button" value="8" class="digit" onClick="calculadora.digito(8)" />
+            <input type="button" value="9" class="digit" onClick="calculadora.digito(9)" />
             <input type="button" value="*" class="operator" onClick="calculadora.multiplicacion()" />
         </div>
         <div>
-            <input type="button" value="4" class="digit" onClick="calculadora.pulsa4()" />
-            <input type="button" value="5" class="digit" onClick="calculadora.pulsa5()" />
-            <input type="button" value="6" class="digit" onClick="calculadora.pulsa6()" />
+            <input type="button" value="4" class="digit" onClick="calculadora.digito(4)" />
+            <input type="button" value="5" class="digit" onClick="calculadora.digito(5)" />
+            <input type="button" value="6" class="digit" onClick="calculadora.digito(6)" />
             <input type="button" value="-" class="operator" onClick="calculadora.resta()" />
         </div>
         <div>
-            <input type="button" value="1" class="digit" onClick="calculadora.pulsa1()" />
-            <input type="button" value="2" class="digit" onClick="calculadora.pulsa2()" />
-            <input type="button" value="3" class="digit" onClick="calculadora.pulsa3()" />
+            <input type="button" value="1" class="digit" onClick="calculadora.digito(1)" />
+            <input type="button" value="2" class="digit" onClick="calculadora.digito(2)" />
+            <input type="button" value="3" class="digit" onClick="calculadora.digito(3)" />
             <input type="button" value="+" class="operator" onClick="calculadora.suma()" />
         </div>
         <div>
-            <input type="button" value="0" class="digit" onClick="calculadora.pulsa0" />
-            <input type="button" value="." class="digit" onClick="calculadora.coma()" />
+            <input type="button" value="0" class="digit" onClick="calculadora.digito(0)" />
+            <input type="button" value="." class="digit" onClick="calculadora.digito('.')" />
             <input type="button" value=" " class="digit" onClick="" />
-            <input type="button" value="=" class="operator" onClick="calculadora.resolver()" />
+            <input type="button" value="=" class="operator" onClick="calculadora.igual()" />
         </div>
     </article>
     <footer>
