@@ -43,8 +43,8 @@ div {
     margin-left: auto;
     margin-right: auto;
     min-width: fit-content;
-    display: inline;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 div input {
